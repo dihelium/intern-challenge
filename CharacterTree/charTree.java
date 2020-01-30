@@ -181,11 +181,11 @@ public class charTree {
             String[] str = new String[count];
             int j = 0;
             for(int i = 0;i<retArr.length();++i){
-                if(retArr.charAt(i)=='\n'){
+                if(i<retArr.length()&&retArr.charAt(i)=='\n'){
                     i++;
                 }
                 int index = i;
-                while(retArr.charAt(i)!='\n'){
+                while(i<retArr.length()&&retArr.charAt(i)!='\n'){
                     i++;
                 }
                 if(j<count)
